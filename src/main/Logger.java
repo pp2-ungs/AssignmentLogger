@@ -9,11 +9,11 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import remote.RemoteObserver;
 
-public class AssignmentLogger extends UnicastRemoteObject implements RemoteObserver {
+public class Logger extends UnicastRemoteObject implements RemoteObserver {
     
     private String filename;
 
-    public AssignmentLogger(String filename) throws RemoteException {
+    public Logger(String filename) throws RemoteException {
         super();
         this.filename = filename;
     }

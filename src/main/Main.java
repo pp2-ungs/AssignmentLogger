@@ -13,7 +13,7 @@ public class Main {
 
             RemoteObserverAdder remoteController = (RemoteObserverAdder) registry.lookup("TASkOcupado");
             var fileName = System.getProperty("user.home") + File.separator + "AssignmentLogger.txt";
-            RemoteObserver remoteObserver = new AssignmentLogger(fileName);
+            RemoteObserver remoteObserver = new Logger(fileName);
 
             remoteController.addObserver(remoteObserver);
 
