@@ -1,22 +1,19 @@
-package core;
+package main;
 
-import core.TASkChusmeando;
 import java.io.File;
 import java.rmi.registry.*;
 import remote.RemoteObserver;
-import remote.RemoteTaskController;
+import remote.RemoteObserverAdder;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Viva Perón");
-
         try {
             Registry registry = LocateRegistry.getRegistry("localhost", 5050);
 
-            RemoteTaskController remoteController = (RemoteTaskController) registry.lookup("TASkOcupado");
-            var fileName = System.getProperty("user.home") + File.separator + ".TASkChusmeando.txt";
-            RemoteObserver remoteObserver = new TASkChusmeando(fileName);
+            RemoteObserverAdder remoteController = (RemoteObserverAdder) registry.lookup("TASkOcupado");
+            var fileName = System.getProperty("user.home") + File.separator + "AssignmentLogger.txt";
+            RemoteObserver remoteObserver = new AssignmentLogger(fileName);
 
             remoteController.addObserver(remoteObserver);
 

@@ -1,19 +1,19 @@
-package core;
+package main;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.rmi.*;
-import java.rmi.server.*;
 import remote.RemoteObserver;
 
-public class TASkChusmeando extends UnicastRemoteObject implements RemoteObserver {
-
+public class AssignmentLogger extends UnicastRemoteObject implements RemoteObserver {
+    
     private String filename;
 
-    public TASkChusmeando(String filename) throws RemoteException {
+    public AssignmentLogger(String filename) throws RemoteException {
         super();
         this.filename = filename;
     }
@@ -31,5 +31,5 @@ public class TASkChusmeando extends UnicastRemoteObject implements RemoteObserve
             System.out.println("?something wrong with java... well, everything is wrong with java");
         }
     }
-
+    
 }
