@@ -1,19 +1,17 @@
-package main;
+package logger;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.rmi.RemoteException;
-import java.rmi.server.UnicastRemoteObject;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import remote.RemoteObserver;
+import observer.Observer;
 
-public class Logger extends UnicastRemoteObject implements RemoteObserver {
+public class Logger implements Observer {
     
     private String filename;
 
-    public Logger(String filename) throws RemoteException {
+    public Logger(String filename) {
         super();
         this.filename = filename;
     }
