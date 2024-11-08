@@ -1,5 +1,8 @@
 package logger;
 
+import core.Settings;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -8,12 +11,13 @@ import java.time.format.DateTimeFormatter;
 import observer.Observer;
 
 public class Logger implements Observer {
-    
+
+    private final String defaultFileName = System.getProperty("user.home") + File.separator + "AssignmentLogger.txt";
     private String filename;
 
     public Logger(String filename) {
         super();
-        this.filename = filename;
+        this.filename = filename == null || filename.isEmpty() ? defaultFileName : filename;
     }
 
     @Override
@@ -29,5 +33,5 @@ public class Logger implements Observer {
             System.out.println("?something wrong with java... well, everything is wrong with java");
         }
     }
-    
+
 }
