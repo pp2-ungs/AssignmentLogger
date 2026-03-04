@@ -96,6 +96,3 @@ Entries are appended to the file, so the full history is preserved across runs.
 |------------------|---------------------------------------------------|
 | TASkOcupadoCore  | Provides `observer.Observer` and `core.Settings`  |
 
-## Authors
-
-© 2024 <a href="https://github.com/xebertz">Ebertz</a>, <a href="https://github.com/Gonza-JL">López</a>, <a href="https://github.com/rondelli">Rondelli</a>
