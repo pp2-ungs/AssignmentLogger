@@ -2,6 +2,19 @@
 
 A Java library that provides file-based logging for assignment/task events. It is part of the **TASkOcupado** system and implements the `Observer` interface from the `TASkOcupadoCore` module to receive and persist event notifications.
 
+© 2024 <a href="https://github.com/xebertz">Ebertz</a>, <a href="https://github.com/Gonza-JL">López</a>, <a href="https://github.com/rondelli">Rondelli</a>
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Requirements](#requirements)
+- [Building](#building)
+- [Usage](#usage)
+- [Log File Format](#log-file-format)
+- [Dependencies](#dependencies)
+
 ## Overview
 
 `AssignmentLogger` listens for events emitted by the task management system and writes them — with a timestamp — to a plain-text log file. Each event is also echoed to standard output for debugging purposes.
@@ -83,6 +96,6 @@ Entries are appended to the file, so the full history is preserved across runs.
 |------------------|---------------------------------------------------|
 | TASkOcupadoCore  | Provides `observer.Observer` and `core.Settings`  |
 
-## Author
+## Authors
 
-Gonza
+© 2024 <a href="https://github.com/xebertz">Ebertz</a>, <a href="https://github.com/Gonza-JL">López</a>, <a href="https://github.com/rondelli">Rondelli</a>
