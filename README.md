@@ -2,7 +2,7 @@
 
 A Java library that provides file-based logging for assignment/task events. It is part of the **TASkOcupado** system and implements the `Observer` interface from the `TASkOcupadoCore` module to receive and persist event notifications.
 
-© 2024 <a href="https://github.com/xebertz">Ebertz</a>, <a href="https://github.com/Gonza-JL">López</a>, <a href="https://github.com/rondelli">Rondelli</a>
+© 2024 [Ebertz](https://github.com/xebertz), [López](https://github.com/Gonza-JL), [Rondelli](https://github.com/rondelli)
 
 ## Table of Contents
 
